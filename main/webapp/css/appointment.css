@@ -1,0 +1,74 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d8bfa3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px;
+  border: 1px solid #ccc;
+}
+
+.form-section {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.form-section h2 {
+  color: #c97b3c;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.form-section h1 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #7c0f0f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 40px; 
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: Italianno, Abhaya Libre;
+    background-color: #d7b89d;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.login-box {
+    display: flex;
+    background-color: white;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+
+.left-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.left-panel .logo {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #a15c3b;
+    margin-bottom: 10px;
+}
+
+.left-panel h1 {
+    margin-bottom: 30px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;              
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #5dc9f6;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #3eb0dc;
+}
+
+
+.left-panel .forgot,
+.left-panel .create {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.left-panel a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.left-panel a:hover {
+    text-decoration: underline;
+}
+
+
+.right-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; 
+    box-sizing: border-box;
+    height: 100%; 
+}
+
+.right-panel img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px; /* optional, keeps it neat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}

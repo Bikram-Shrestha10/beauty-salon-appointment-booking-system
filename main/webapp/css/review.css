@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #e2bea3;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 60px;
+    width: 70%;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    color: #7b1818;
+    margin-bottom: 30px;
+}
+
+.form-grid {
+    display: flex;
+    gap: 40px;
+}
+.submit-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #7b1818;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5c1313;
+}
+
+
+.left, .right {
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 20px;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.location-input {
+    position: relative;
+}
+
+.location-input .icon {
+    position: absolute;
+    width:11px;
+    height:auto;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

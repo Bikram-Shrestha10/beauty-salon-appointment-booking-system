@@ -1,0 +1,67 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dcdcdc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #701010;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.toggle-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.toggle-buttons .tab {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.toggle-buttons .tab.active {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.appointment-message {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #555;
+  margin-bottom: 40px;
+}
+
+.book-now button {
+  background-color: #44c3f7;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}

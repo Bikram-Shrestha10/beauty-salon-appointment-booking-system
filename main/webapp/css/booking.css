@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* Reset & Base */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0; /* light beige */
+    background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
+    background-repeat: repeat;
+    color: #5e4633; /* warm brown */
+}
+
+/* Header */
+header {
+    background: #f2e3d5;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5e4633;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #5e4633;
+    font-weight: bold;
+}
+
+/* Horizontal staggered box layout */
+.grid-layout-custom {
+    display: flex;
+    justify-content: space-around;
+    padding: 58px 174px;
+    gap: 20px;
+    padding: 60px 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-left: 20px;
+}
+
+.box {
+    background: #f7ede2;
+    border-radius: 0px;
+    padding: 20px;
+    width: 170px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Zigzag positioning */
+/* Zigzag positioning + alternating colors */
+.box:nth-child(odd) {
+    background: #F6F6F6; 
+    transform: translateY(-30px);
+    width: 240px;
+}
+
+.box:nth-child(even) {
+    background: #EFDBC5; 
+    transform: translateY(30px);
+    width: 240px;
+}
+
+/* Box hover glow */
+.box:hover {
+    transform: scale(1.03) translateY(0);
+    box-shadow: 0 8px 20px rgba(139, 94, 60, 0.2);
+}
+
+.box h3 {
+    color: #8b5e3c; /* dark brown */
+    margin-bottom: 10px;
+}
+
+.box h4 {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5e4633;
+}
+
+.box label {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Booking Form */
+.booking-form {
+    background: #f7ede2;
+    padding: 30px;
+    margin: 60px auto;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.booking-form h2 {
+    color: #8b5e3c;
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #5e4633;
+}
+
+.booking-form input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #c8b29c;
+    margin-bottom: 15px;
+    background-color: #fffaf5;
+    color: #5e4633;
+}
+
+/* Button with shine effect */
+.booking-form button {
+    position: relative;
+    overflow: hidden;
+    background: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.booking-form button:hover {
+    background: #a67c52;
+    transform: scale(1.05);
+}
+
+.booking-form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: left 0.5s;
+}
+
+.booking-form button:hover::before {
+    left: 125%;
+}
+
+/* Footer */
+footer {
+    background: #a67c52;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+.site-title {
+    font-family: 'Italianno', cursive;
+    font-size: 70px;
+    text-align: center;
+    color: #8b5e3c;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px #e8d8c8;
+    position: relative;
+}
+
+.site-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: #a67c52;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+
+
+
+/* Scrollbar Styling */
+.grid-layout-custom::-webkit-scrollbar {
+    height: 8px;
+}
+.grid-layout-custom::-webkit-scrollbar-thumb {
+    background-color: #8b5e3c;
+    border-radius: 10px;
+}

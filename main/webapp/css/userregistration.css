@@ -1,0 +1,144 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DFBFA8;
+}
+
+/* Outer wrapper */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Main form container with box style */
+.form-container {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Left side: form and text */
+.form-left {
+    flex: 1;
+    padding: 30px;
+}
+
+.title {
+    margin: 0;
+    color: #97511E;
+    font-size: 30px;
+    font-family: 'Italianno', cursive;
+}
+
+.subtitle {
+    margin: 5px 0;
+    color: #333;
+}
+
+.instruction {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+}
+
+/* First & last name row */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row .input-box {
+    flex: 1;
+}
+
+
+button{
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+	transition: translate 0.5s;	
+	max-width: 100px;	
+    
+}
+
+
+button:hover{
+	background-color: red;
+	
+}
+
+input-box button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Right side: Full-height image */
+.form-right {
+    flex: 0.9;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-right img {
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+    border-radius:5px;
+    
+}
+
+
+
+
+
+
